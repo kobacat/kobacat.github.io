@@ -1,0 +1,15 @@
+ModelBegin
+  Diffuse 1.0
+  ClumpBegin #Layer: Material-001
+    Texture hanyuavi.cmp
+	TextureMode Foreshorten
+	AxisAlignment xyz
+#texbegin Material-001
+    Vertex -32.400002 -49.900002 0 UV 0 1.0 #1
+    Vertex -32.400002 49.900002 0 UV 0 0 #2
+    Vertex 32.400002 -49.900002 0 UV 1.0 1.0 #3
+    Vertex 32.400002 49.900002 0 UV 1.0 0 #4
+#texend Material-001
+    Quad 2 1 3 4
+  ClumpEnd
+ModelEnd
