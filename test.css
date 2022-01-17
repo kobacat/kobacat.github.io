@@ -3,7 +3,7 @@
    "how to change link color." */
 
 body {
-  background-image: url("\images\landing\sky.gif");
+  background-image: url("sky.gif");
   background-color: #cccccc;
   color: white;
   font-family: Verdana;
