@@ -165,7 +165,7 @@ a:hover {
 
 
 body {
-  background-image: url("bg.png");
+  background-image: url("/images/bg.png");
   background-position: cover;
   background-size: cover;
   background-color: #cccccc;
