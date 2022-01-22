@@ -59,7 +59,7 @@ table {
 }
 
 .slideshow-slide img {
-  width: 87.0%;
+  width: 86.9%;
   max-height: 608rem;
   position: relative;
   left: 11.7rem;
@@ -72,7 +72,18 @@ table {
 
 .disabled a {
   text-decoration: none;
-  color: #383838;
+  color: #383838 !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.destination a {
+  text-decoration: none;
+  color: #E84C71 !important;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -91,6 +102,7 @@ h1 {
   max-height: 2rem;
 }
 
+
 a:hover {
   color: #beaae0;
 }
@@ -100,6 +112,10 @@ a:hover {
 }
 
 .disabled a:hover {
+  color: #383838
+}
+
+.destination a:hover {
   color: #383838
 }
 
@@ -176,12 +192,64 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600');
 
+
 h1 {
   font-size: 2.6em;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: bold;
   margin:50px 20px 10px 0px;
-  
+}
+
+#steam {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  bottom: 0.3em;
+  left: 1em;
+}
+
+#toyhouse {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  bottom: 0.3em;
+  left: 5em;
+}
+
+#carrd {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  bottom: 0.3em;
+  left: 8em;
+}
+
+#profile {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  bottom: 21.3em;
+  left: 28.2em;
+  border-radius: 05%;
+}
+
+.caption {
+  position: relative;
+  left: 69.9rem;
+  bottom: 8rem;
+  max-width: 10rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin:50px 20px 10px 20px;
+  max-height: 30rem;
+  position: relative;
+  bottom: 1rem;
 }
 
 .secret {
