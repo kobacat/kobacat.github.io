@@ -208,6 +208,13 @@ h1 {
   left: 1em;
 }
 
+#identity {
+  width: 160%;
+  height: 150%;
+  position: relative;
+  bottom: 0.9em;
+}
+
 #toyhouse {
   width: 25%;
   height: 20%;
@@ -302,7 +309,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0);
   position: relative;
   right: -75.3rem;
-  top: -2.8rem;
+  top: -5.8rem;
   width: 42rem;
 }
 
