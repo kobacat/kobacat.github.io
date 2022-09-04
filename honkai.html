@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        const url = 'https://u.a4x.me/proxy.php?csurl=https://feeds.c3kay.de/honkai.json';
+        const div = document.querySelector('div');
+        fetch(url)
+            .then(response => response.json())
+            .then(data => data.items.map(item => `<a href="${item.url}">${item.title}</a>`).join(' | '))
+            .then(string => {
+                div.innerHTML = string;
+            });
+    </script>
+</body>
+</html>

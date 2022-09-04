@@ -9,6 +9,7 @@
     <meta name="author" content="koba"/>
     <meta name="keywords" content="koba,kobacat,kensabrush"/>
     <meta property="og:image" content="/images/embed.png"/>
+    <script type="text/javascript" src="/js/howler.js"></script>
     <meta name="theme-color" content="#BAB6FC"/>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
@@ -20,18 +21,23 @@
   </head>
   <body>
 
+<script>
+    var sound = new Howl({
+        src: ['/sounds/7953.mp3'],
+        autoplay: true,
+        loop: true,
+});
+</script>
+
 <!-- SCM Music Player https://www.scmplayer.net -->
 <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
 data-config="{'skin':'skins/aquaPink/skin.css','volume':13,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'3DS Internet Settings','url':'https://www.youtube.com/watch?v=kxM2TyRZJAg'},{'title':'Fire','url':'https://www.youtube.com/watch?v=uWKJ6cGgHFQ'},{'title':'Naraku no Hana','url':'https://www.youtube.com/watch?v=aP5GypiM_Vw'},{'title':'Voile, the Magic Library','url':'https://www.youtube.com/watch?v=M41icPgtWGg'},{'title':'End Of Day','url':'https://www.youtube.com/watch?v=VbJt90CWPOc'},{'title':'As For Myself','url':'https://www.youtube.com/watch?v=p5iYbBII2lg'},{'title':'God Knows,,,','url':'https://www.youtube.com/watch?v=WWB01IuMvzA'},{'title':'Necrofantasia','url':'https://www.youtube.com/watch?v=lL33M9e-g8Q'},{'title':'The Chasm - Battle Theme 3','url':'https://www.youtube.com/watch?v=d7vaAtKirro'},{'title':'Romantic Fall','url':'https://www.youtube.com/watch?v=dTipIQDl3so'}]}" ></script>
 <!-- SCM Music Player script end -->
 
-<!--ブログ・スイッチコード/-->
-<div class="button">
-    <script src="http://www.blog-switch.com/widgets/45023/7380302653.js" type="text/javascript" charset="UTF-8"></script><!--ブログ・スイッチコード/-->
+
+<div id="leftpicture">
+    <img style="vertical-align: bottom" draggable="false" src="/images/home/kohaku.png" id="leftpic"/>
 </div>
-<!-- <div id="leftpicture">
-    <img draggable="false" src="/images/home/jill.png" id="leftpic"/>
-</div> -->
 
     <div id="container">
         <div id="banner">
@@ -40,11 +46,7 @@ data-config="{'skin':'skins/aquaPink/skin.css','volume':13,'autoplay':false,'shu
         <div id="scroll">
             <div class="content">
                 <marquee behavior="scroll" direction="left">
-                    <a>Honkai Impact 3rd is set in an alternate version of Earth, plagued by catastrophes resulting from "Honkai". Honkai is largely viewed as a malevolent force with a will of its own, able to corrupt humans into undead creatures, manifest itself in the form of various monsters, and select various individuals known as "Herrschers" to imbue them with god-like powers able to trigger apocalyptic events. The Honkai is a cyclic phenomenon, returning to end civilization on Earth each time it gets too advanced - the Previous Era ended 50,000 years prior to the game's start, after the 14th Herrscher defeated humanity.
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        In the present day, various global factions exist to combat or take advantage of the power of Honkai. These include "Schicksal", a European-based peacekeeping organization that deploys human warriors known as Valkyries to combat the Honkai; "Anti-Entropy", formerly the North American branch of Schicksal that objected to the use of human soldiers in favor of mechanized robots; and "World Serpent", a shadow organization manipulating events since the end of the Previous Era.
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        Prior to the story's start, three Herrscher awakenings (or "Impacts") have occurred in the Current Era: the Herrscher of Reason who became the leader of Anti-Entropy instead of fighting humanity, the Herrscher of the Void who was defeated by Schicksal and Anti-Entropy in 2000, and the Herrscher of Thunder who was prevented from fully awakening and sent to train her powers as a Valkyrie at Schicksal's St. Freya Academy.</a>
+                    <a></a>
                 </marquee>
             </div>
         </div>
