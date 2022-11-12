@@ -6,5 +6,6 @@ blog/.bundle
 blog/.sass-cache
 blog/Gemfile
 blog/Gemfile.lock
-node_modules
+node_modules/
 package.json
+package-lock.json
