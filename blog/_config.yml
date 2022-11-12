@@ -12,7 +12,7 @@ description: music making and dumb thoughts
 # twitter_username: jekyllrb
 github_username:  kobacat
 permalink: /:year/:month/:day/:title/
-baseurl: /blog/
+baseurl: /kobacat.github.io/blog/
 url: https://kobacat.com
 
 # Build settings
