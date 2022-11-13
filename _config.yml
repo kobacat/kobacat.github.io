@@ -11,7 +11,7 @@ brief-intro: music making and dumb thoughts
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 production_url: "https://kobacat.github.io/blog"
 BASE_PATH: "https://kobacat.com/blog"
-url: "https://kobacat.com/blog" # the base hostname & protocol for your site
+# url: "https://kobacat.com/blog" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
