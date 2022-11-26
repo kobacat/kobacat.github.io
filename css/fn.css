@@ -1,0 +1,300 @@
+@font-face {
+    font-family: burbank;
+    font-weight: bold;
+    src: url('/fonts/BurbankBigCondensed-Bold.otf') format("opentype");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    /* background-image: url("/images/sky.gif"); */
+    background-color: #030613;
+    background-repeat: repeat-y;
+    color: #030613;
+    font-family: Verdana;
+    text-align: center;
+      max-width: 100%;
+      max-height: 100vh;
+      margin: 0;
+      
+      
+  }
+
+  #container {    
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+    #banner {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(0, 255, 21, 0);
+        max-width: 100%;
+        max-height: 100vh;
+        background-color: #090328;
+        border-color: #0c3c95;
+        border-top: .8vh solid #183d6d;
+        border-bottom: .8vh solid #183d6d;
+        padding: 0;
+        margin:0;
+    }
+
+    #subbannertext1 {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(0, 255, 21, 0);
+        max-width: 100%;
+        color: #bad6f7;
+        font-weight: bold;
+        font-size: 1.5vw;
+        margin-bottom: 2vh;
+    }
+
+    #bannertext {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(0, 255, 21, 0);
+        max-width: 100%;
+        max-height: 6vh;
+        color: #72D7EC;
+        font-weight: bold;
+        font-size: 1.4vw;
+        margin-top: .5vh;
+        margin-bottom: 2vh;
+    }
+
+    #subbannertext2 {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(0, 255, 21, 0);
+        max-width: 100%;
+        max-height: 6vh;
+        color: #cbe1ff;
+        font-weight: bold;
+        font-size: 1.2vw;
+        margin-top: -1vh;
+        margin-bottom: 2vh;
+    }
+
+#identity {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    max-width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    height:auto;
+}
+
+#disc {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    max-width: 60%;
+    filter: brightness(160%);
+    object-fit: scale-down;
+    height:auto;
+}
+
+#maincontent {    
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    margin-left: auto;
+    margin-bottom: 10vh;
+    max-height: 100vh;
+}
+
+#discheader {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    padding: 0;
+    margin:0;
+}
+
+#discsubtext {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    filter: brightness(160%);
+    font-weight: bold;
+    font-size: 2.8vw;
+    font-family: burbank;
+    margin-top: 1.5vh;
+    text-align: center;
+}
+
+#discpromo {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    padding: 0;
+    margin:0;
+}
+
+#discimg {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    max-width: 70%;
+    object-fit: scale-down;
+    height:auto;
+    margin-top: 1vh;
+    border: 0.9vh solid #D8B555;
+    background-color: #D8B555;
+    border-radius: 5px;
+}
+
+#discdetailtext {
+    position: relative;
+    justify-content: center;
+    filter: brightness(160%);
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: burbank;
+    margin-top: 1.5vh;
+    text-align: center;
+    margin-bottom: vh;
+}
+
+#download {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    padding: 0;
+    margin:0;
+    filter: brightness(100%);
+}
+
+#dwimg {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    max-width: 75%;
+    object-fit: scale-down;
+    height:auto;
+    margin-top: 1vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#homebtn {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    border: none;
+    height: 0vh;
+   }
+
+   #homebtn:hover{
+    opacity: 0.6;
+   }
+
+   #homebtn:active{
+    opacity: 0.3;
+   }
+
+
+   #lowbanner {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: #090328;
+    border-color: #0c3c95;
+    border-top: .8vh solid #183d6d;
+    border-bottom: .8vh solid #183d6d;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
+
+#lowbannertext {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 255, 21, 0);
+    max-width: 100%;
+    color: #72D7EC;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+@Keyframes move-clouds-back {
+    from {background-position: 0 0;}
+    to {background-position: 10000px 0}
+}
+
+@Keyframes move-twinkle-back {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px}
+}
+
+.stars, .twinkling, .clouds{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    display: block;
+
+}
+
+.stars {
+    background: rgba(0, 0, 0, 0) url(/images/fn/stars.png) repeat top center;
+    z-index: -2;
+}
+
+.twinkling{
+    background: transparent url(/images/fn/twinkling.png) repeat top center;
+    z-index: -1;
+    animation: move-twinkle-back 200s linear infinite;
+}
+
+/* .clouds{
+    background: transparent url(/images/fn/clouds.png) repeat top center;
+    z-index: 0;
+    opacity: .4;
+    animation: move-twinkle-back 200s linear infinite;
+} */
