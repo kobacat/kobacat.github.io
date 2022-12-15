@@ -39,6 +39,18 @@ body {
       
   }
 
+  a:link {
+    color:#7d9bbe
+  }
+
+  a:visited {
+    color:#7d9bbe
+  }
+
+  a:hover {
+    color:#a3a8bd
+  }
+
   #container {    
     position: relative;
     justify-content: center;
@@ -214,10 +226,10 @@ body {
 #homebtn {
     position: relative;
     justify-content: center;
-    display: flex;
     padding: 0;
     border: none;
     height: 0vh;
+    display: flex;
    }
 
    #homebtn:hover{
