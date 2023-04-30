@@ -1,13 +1,13 @@
 body {
-    background-color: hsl(350, 81%, 8%);
-    color: rgb(241, 188, 188);
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(254, 255, 255);
     font-family: Verdana;
     text-align: center;
     max-width: 100vh;
     margin: auto;
     overflow: auto;
-    background: linear-gradient(315deg, hsl(350, 81%, 8%) 3%, rgb(107, 12, 12) 38%, rgb(41, 17, 35) 68%, rgb(59, 7, 29) 98%);
-    animation: gradient 15s ease infinite;
+    background: linear-gradient(315deg, hsl(0, 0%, 0%) 3%, rgb(54, 54, 54) 38%, rgb(0, 0, 0) 68%, rgb(0, 0, 0) 98%);
+    animation: gradient 25s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
   }
@@ -24,33 +24,135 @@ body {
     }
 }
 
+.glitch{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	
+}
+
+.glitch .text{
+	animation: jerkwhole 2.5s infinite;
+    position:relative;
+	padding:0;
+	margin:0;
+}
+
+.glitch span{
+	position:absolute;
+	color: rgb(241, 0, 0);
+	font-size: 4em;
+	text-align:center;
+	filter: blur(1px);
+	animation: blur 10ms infinite, jerk 10ms infinite;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:100vw;
+	
+}
+
+.glitch span:nth-child(1){
+	color:rgb(31, 31, 31);
+  margin-left:8px;
+	margin-top:-2px;
+  filter: blur(2px);
+	
+}
+.glitch span:nth-child(2){
+	color:rgb(94, 94, 94);
+  margin-left:7px;
+  filter: blur(2px);
+}
+.glitch span:nth-child(3){
+	color:blue;
+  margin-left:-7px;
+	margin-top:4px;
+    filter: blur(2px);
+	animation: jerkblue .5s infinite;
+}
+.glitch span:nth-child(4){
+	color:white;
+    filter: blur(1px);
+	 text-shadow:0 0 50px rgba(255,255,255,0.4);
+}
+.glitch span:nth-child(5){
+	color:rgba(255,255,255,0.4);
+    filter: blur(15px);
+}
+
+@keyframes blur {
+  0%   { -webkit-filter: blur(1px); opacity:0.8;}
+  50% { -webkit-filter: blur(1px); opacity:1; }
+  100%{ -webkit-filter: blur(1px); opacity:0.6; }
+}
+@keyframes jerk {
+  50% { left:2px; }
+  51% { left:0; }
+}
+@keyframes jerkup {
+  50% { top:2px; }
+  51% { top:0; }
+}
+
+@keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+}
+
+@keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-20px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:15px; }
+}
+
+@keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0px;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(20deg,0);}
+  42% { opacity:0.8; top:0px; left:50px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-40deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+
 .wave {
-    background: rgba(151, 99, 147, 0.25);
+    background: rgba(253, 252, 253, 0.25);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
-    width: 200%;
+    width: 250%;
     height: 25vh;
-    animation: wave 10s -3s linear infinite;
-    transform: rotate(5deg);
+    animation: wave 45s -53s linear infinite;
+    transform: rotate(50deg);
     transform: translate3d(0, 0, 0);
     opacity: 0.5;
-    bottom: 30vh;
+    bottom: 35vh;
     left: 0;
     z-index: -1;
 }
 
 .wave:nth-of-type(2) {
-    animation: wave 13s linear reverse infinite;
+    animation: wave 30s linear infinite;
     opacity: 0.5;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
     bottom: 30vh;
 }
 
 .wave:nth-of-type(3) {
-    animation: wave 15s -1s reverse infinite;
-    transform: rotate(5deg);
+    animation: wave 55s -1s reverse infinite;
+    transform: rotate(7deg);
     opacity: 0.5;
-    bottom: 30vh;
+    bottom: 25vh;
 }
 
 @keyframes wave {
@@ -79,7 +181,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 0.3vh solid #991646;
+    border-top: 0.3vh solid #ffffff;
     margin: 1em 0;
     padding: 0;
 }
@@ -152,7 +254,7 @@ hr {
 
 #page {
     background-color: white;
-    background-image: linear-gradient(#480023, #693d52), radial-gradient(circle at bottom, #000000, #991646);
+    background-image: linear-gradient(#000000, #292929), radial-gradient(circle at bottom, #000000, #616161);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-width: 1.5vh;
@@ -183,11 +285,11 @@ a {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(117, 112, 112);
     border-collapse: collapse;
     padding: 1vh;
     font-weight: normal;
-    background-color: #57184c;
+    background-color: #2b2b2b;
 }
 .rightImg {
     padding: 1vh;

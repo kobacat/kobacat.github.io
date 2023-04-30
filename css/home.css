@@ -41,6 +41,7 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     color: #B70766;
+    max-width: auto;
     margin:2px 1px 0px -25px;
   }
 
