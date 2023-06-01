@@ -112,6 +112,20 @@ body {
         margin-bottom: 2vh;
     }
 
+    #subbannertext3 {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(0, 255, 21, 0);
+        max-width: 100%;
+        max-height: 6vh;
+        color: #ff7af4;
+        font-weight: bold;
+        font-size: 1.2vw;
+        margin-top: -1vh;
+        margin-bottom: 2vh;
+    }
+
 #identity {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
