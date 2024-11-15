@@ -9,3 +9,6 @@ blog/Gemfile.lock
 node_modules/
 package.json
 package-lock.json
+*.vsidx
+.vs/slnx.sqlite
+.vs/ProjectSettings.json
