@@ -44,7 +44,8 @@ body {
   }
 
   a:visited {
-    color:#7d9bbe
+    color:#df8fa300;
+    text-decoration: none;
   }
 
   a:hover {

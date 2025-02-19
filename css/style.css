@@ -70,6 +70,10 @@ table {
   filter: brightness(60%);
 }
 
+a:link, a:visited {
+  text-decoration: none;
+}
+
 .disabled a {
   text-decoration: none;
   color: #383838 !important;
